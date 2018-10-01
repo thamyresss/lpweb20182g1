@@ -55,6 +55,10 @@ export class CadastrarOrcamentoComponent implements OnInit {
     this.total_orcamento = 0.0;
   }
 
+  remover(mobilia){
+    this.mobilias.splice(this.mobilias.findIndex( n => n.id === mobilia.id), 1);
+  }
+
   mostrar_total() {
     let orcamento = {
       nome: this.nome,

@@ -54,6 +54,7 @@
   <ul>
     <li *ngFor="let mobilia of mobilias">
       {{mobilia.tipo}} - {{mobilia.largura}}cm
+      <button type="button" (click) = "remover(mobilia)">Remover</button>
     </li>
   </ul>
   <h3>Total do orçamento</h3>
